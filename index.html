@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegan Hunger</title>
+    <link rel="icon" href="./src/img/logov2.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--HEADER-->
+    <header>
+        <!--MENÚ CONTAINER-->
+        <div id="inicio" class="menu container">
+            <img class="logo-1" src="./src/img/logo.png" alt="Logo Vegan Hunger">
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="./src/img/menu.png" class="menu-icono" alt="Ícono de menú">
+            </label>
+            <!--NAVBAR-->
+            <nav class="navbar">
+                <!--Menú 1-->
+                <div class="menu-1">
+                    <ul>
+                        <li>
+                            <a href="#inicio">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="#productos">Productos</a>
+                        </li>
+                        <li>
+                            <a href="#servicios">Servicios</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#final">
+                <img class="logo-2" src="./src/img/logo.png" alt="Logo Vegan Hunger">
+                </a>
+                <!--Menú 2-->
+                <div class="menu-2">
+                    <ul>
+                        <li>
+                            <a href="#datos">Visítanos</a>
+                        </li>
+                    </ul>
+                    <!--Íconos redes sociales-->
+                    <div class="socials">
+                        <a href="#">
+                            <div class="social">
+                                <img src="./src/img/s1.svg" alt="Ícono facebook">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="social">
+                                <img src="./src/img/s2.svg" alt="Ícono twitter">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="social">
+                                <img src="./src/img/s3.svg" alt="Ícono instagram">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!--SLIDE CONTAINER-->
+        <div class="header-content container">
+            <!--MySwiper-1-->
+            <div class="swiper mySwiper-1">
+                <div class="swiper-wrapper">
+                    <!--Slide 1-->
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <!--Slide text-1-->
+                            <div class="slider-txt">
+                                <h1>Bacon Burger</h1>
+                                <p>Preparada con ingredientes 100% plant-based, cada bocado te sorprenderá con su sabor auténtico y suculento. El protagonista: nuestro tocino vegano ahumado perfectamente crujiente, que añade ese toque irresistible de sabor sin ningún ingrediente animal.</p>
+                                <div class="botones">
+                                    <a href="#" class="btn-1">Comprar</a>
+                                    <a href="#" class="btn-1">Menú</a>
+                                </div>
+                            </div>
+                            <!--Slide img-1-->
+                            <div class="slider-img">
+                                <img src="./src/img/slider1.png" alt="Fotografía Hamburguesa de tocino">
+                            </div>
+                        </div>
+                    </div>
+                    <!--Slider 2-->
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <!--Slide text-2-->
+                            <div class="slider-txt">
+                                <h1>Ham Sandwich</h1>
+                                <p>Sándwich de jamón vegano elaborado con pan integral suave y ajonjolí, ligeramente tostado, con rodajas de tomate fresco, crujiente lechuga y un toque de mostaza Dijon. Cada ingrediente se une para crear una combinación perfecta de texturas y sabores.</p>
+                                <div class="botones">
+                                    <a href="#" class="btn-1">Comprar</a>
+                                    <a href="#" class="btn-1">Menú</a>
+                                </div>
+                            </div>
+                            <!--Slide img-2-->
+                            <div class="slider-img">
+                                <img src="./src/img/slider2.png" alt="Fotografía Sándwich de jamón">
+                            </div>
+                        </div>
+                    </div>
+                    <!--Slide 3-->
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <!--Slide text-3-->
+                            <div class="slider-txt">
+                                <h1>Classic Burger</h1>
+                                <p>Disfruta de una hamburguesa clásica con todo el sabor y la textura que adoras en cada ingrediente que la compone. Cada mordida te deleitará haciéndote desear más, y lo mejor, 100% plant-based.</p>
+                                <div class="botones">
+                                    <a href="#" class="btn-1">Comprar</a>
+                                    <a href="#" class="btn-1">Menú</a>
+                                </div>
+                            </div>
+                            <!--Slide img-3-->
+                            <div class="slider-img">
+                                <img src="./src/img/slider3.png" alt="Fotografía Hamburguesa clásica">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Swiper buttons-->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </header>
+
+    <!--MAIN-->
+    <main id="productos" class="products">
+        <!--Tab container-->
+        <div class="tabs container">
+            <!--TabInput1-->
+            <input type="radio" name="tabs" id="tab1" checked="checked" class="tabInput" value="1">
+            <label for="tab1">Hamburguesas</label>
+            <!--Tab-->
+            <div class="tab">
+                <!--MySwiper-2-->
+                <div class="swiper mySwiper-2" id="swiper1">
+                    <!--Swiper Wrapper-->
+                    <div class="swiper-wrapper">
+                        <!--Swiper Slider-1-->
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Nuevo</h4>
+                                    <img src="./src/img/food1.png" alt="Fotografía Hamburguesa clásica">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Classic Burger</h4>
+                                    <p>A base de soya</p>
+                                    <span class="price">$50.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Swiper Slider-2-->
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Nuevo</h4>
+                                    <img src="./src/img/food2.png" alt="Fotografía Sándwich de jamón">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Ham Sandwich</h4>
+                                    <p>A base de soya</p>
+                                    <span class="price">$50.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Swiper Slider-3-->
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Nuevo</h4>
+                                    <img src="./src/img/food3.png" alt="Fotografía Sándwich de pollo">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Chicken Sandwich</h4>
+                                    <p>A base de soya</p>
+                                    <span class="price">$50.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Swiper Slider-4-->
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Nuevo</h4>
+                                    <img src="./src/img/food4.png" alt="Fotografía Hamburguesa de queso">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Cheese Burger</h4>
+                                    <p>A base de soya</p>
+                                    <span class="price">$50.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Buttons-->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+            <!--TabInput2-->
+            <input type="radio" name="tabs" id="tab2" checked="checked" class="tabInput" value="2">
+            <label for="tab2">Burritos</label>
+            <!--Tab-->
+            <div class="tab">
+                <!--MySwiper-2-->
+                <div class="swiper mySwiper-2" id="swiper2">
+                    <!--Swiper Wrapper-->
+                    <div class="swiper-wrapper">
+                        <!--Swiper Slider-1-->
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Nuevo</h4>
+                                    <img src="./src/img/food5.png" alt="Fotografía Burrito de carne asada">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Roast Beef Burrito</h4>
+                                    <p>A base de soya</p>
+                                    <span class="price">$50.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Swiper Slider-2-->
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Nuevo</h4>
+                                    <img src="./src/img/food6.png" alt="Fotografía Burrito de chicharrón">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Chicharrón Burrito</h4>
+                                    <p>A base de soya</p>
+                                    <span class="price">$50.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Swiper Slider-3-->
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Nuevo</h4>
+                                    <img src="./src/img/food7.png" alt="Fotografía Burrito de camarones">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Shrimp Burrito</h4>
+                                    <p>A base de soya</p>
+                                    <span class="price">$50.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Swiper Slider-4-->
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Nuevo</h4>
+                                    <img src="./src/img/food8.png" alt="Fotografía Burrito de carne al pastor">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Pastor Meat Burrito</h4>
+                                    <p>A base de soya</p>
+                                    <span class="price">$50.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Buttons-->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+            <!--TabInput3-->
+            <input type="radio" name="tabs" id="tab3" checked="checked" class="tabInput" value="3">
+            <label for="tab3">Variedad</label>
+            <!--Tab-->
+            <div class="tab">
+                <!--MySwiper-2-->
+                <div class="swiper mySwiper-2" id="swiper3">
+                    <!--Swiper Wrapper-->
+                    <div class="swiper-wrapper">
+                        <!--Swiper Slider-1-->
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Nuevo</h4>
+                                    <img src="./src/img/food9.png" alt="Fotografía Aros de cebolla">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Onion Rings</h4>
+                                    <p>A base de soya</p>
+                                    <span class="price">$50.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Swiper Slider-2-->
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Nuevo</h4>
+                                    <img src="./src/img/food10.png" alt="Fotografía Pizza de pepperoni">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Pepperoni Pizza</h4>
+                                    <p>A base de soya</p>
+                                    <span class="price">$50.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Swiper Slider-3-->
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Nuevo</h4>
+                                    <img src="./src/img/food11.png" alt="Fotografía Brochetas de carne">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Meat Skewers</h4>
+                                    <p>A base de soya</p>
+                                    <span class="price">$50.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Swiper Slider-4-->
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Nuevo</h4>
+                                    <img src="./src/img/food12.png" alt="Fotografía Pizza extra queso">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Extra Cheese Pizza</h4>
+                                    <p>A base de soya</p>
+                                    <span class="price">$50.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Buttons-->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--SECTION 1-->
+    <!--Info container-->
+    <section id="servicios" class="info container">
+        <div class="info-img">
+            <img src="./src/img/info.png" alt="Fotografía Torta de pollo">
+        </div>
+        <div class="info-txt">
+            <h2>Descúbrenos</h2>
+            <p>Más allá de un restaurante, Vegan Hunger es una comunidad comprometida con el bienestar del planeta y los seres vivos. Queremos que cada bocado no solo te sorprenda, sino que te inspire a descubrir un estilo de vida más consciente y equilibrado.</p>
+            <a href="#" class="btn-2">Más información</a>
+        </div>
+    </section>
+
+    <!--SECTION 2-->
+    <!--Info container datos-->
+    <section id="datos" class="horario">
+        <div class="horario-info container">
+            <h2>Horario y Dirección</h2>
+            <div class="horario-txt">
+                <div class="txt">
+                    <h4>Dirección</h4>
+                    <p>Avellana 305, Corylus, Juárez N.L.</p>
+                    <p>Nuez 405, Juglans, Juárez N.L.</p>
+                </div>
+                <div class="txt">
+                    <h4>Horario</h4>
+                    <p>Lunes a Viernes: 12:00 p.m. - 10:00 p.m.</p>
+                    <p>Sábados: 12:00 p.m. - 12:00 a.m.</p>
+                </div>
+                <div class="txt">
+                    <h4>Teléfonos</h4>
+                    <p>811 913 67 07</p>
+                    <p>811 913 67 08</p>
+                </div>
+                <div class="txt">
+                    <h4>Redes sociales</h4>
+                    <div class="socials">
+                        <a href="#">
+                            <div class="social">
+                                <img src="./src/img/s1.svg" alt="ícono facebook">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="social">
+                                <img src="./src/img/s2.svg" alt="ícono twitter">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="social">
+                                <img src="./src/img/s3.svg" alt="ícono instagram">
+                            </div>
+                        </a>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </section>
+
+    <!--SECTION 3-->
+    <!--Info container mapa-->
+    <section>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3688889.7802004702!2d-102.45546560781104!3d25.457265706703865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86629584a2a5b05d%3A0x701df442c36cbbc6!2sNuevo%20Le%C3%B3n!5e0!3m2!1ses!2smx!4v1727062908906!5m2!1ses!2smx" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <!--FOOTER-->
+    <footer id="final" class="footer container">
+        <img class="logo-2" src="./src/img/logov2.png" alt="Logo Vegan Hunger versión 2">
+        <!--Links-->
+        <div class="links">
+            <h4>Descúbrenos</h4>
+            <ul>
+                <li>
+                    <a href="#">Servicios</a>
+                </li>
+                <li>
+                    <a href="#">Quiénes somos</a>
+                </li>
+                <li>
+                    <a href="#">Misión y visión</a>
+                </li>
+                <li>
+                    <a href="#">Únete al equipo</a>
+                </li>
+            </ul>
+        </div>
+        <div class="links">
+            <h4>Vegan Hunger</h4>
+            <ul>
+                <li>
+                    <a href="#">Contacto</a>
+                </li>
+                <li>
+                    <a href="#">Solicitar Facturación</a>
+                </li>
+                <li>
+                    <a href="#">Aviso de privacidad</a>
+                </li>
+                <li>
+                    <a href="#">Términos y condiciones</a>
+                </li>
+            </ul>
+        </div>
+        <div class="links">
+            <h4>Comunidad</h4>
+            <ul>
+                <li>
+                    <a href="#">Foro</a>
+                </li>
+                <li>
+                    <a href="#">Valores</a>
+                </li>
+                <li>
+                    <a href="#">Eventos</a>
+                </li>
+                <li>
+                    <a href="#">Redes</a>
+                </li>
+            </ul>
+        </div>
+        <div class="links">
+            <div class="socials">
+                <a href="#">
+                    <div class="social">
+                        <img src="./src/img/s1.svg" alt="ícono facebook">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="social">
+                        <img src="./src/img/s2.svg" alt="ícono twitter">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="social">
+                        <img src="./src/img/s3.svg" alt="ícono instagram">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
